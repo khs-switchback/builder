@@ -3,6 +3,7 @@ FROM switchback/debian
 RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
+ENV BRANCH master
 ENV BUILD_NUMBER 0
 
 # create all the directories that we need 
